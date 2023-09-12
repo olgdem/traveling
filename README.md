@@ -13,7 +13,7 @@ This website I made to master such technologies as:
 ![](https://img.shields.io/badge/-media%20queries-FB6D3A)
 ![](https://img.shields.io/badge/-Flexbox-FB6D3A)
 
-![screenshot](/travel.pdf)
+![screenshot](/Screenshot_taveling.jpg)
 
 ## Description
 
