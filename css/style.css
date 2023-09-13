@@ -410,7 +410,7 @@ h2 {
 }
 
 .slider__prev {
-    background-image: url(/img/previous.svg);
+    
     display: block;
     width: 40px;
     height: 40px;
@@ -418,7 +418,7 @@ h2 {
 }
 
 .slider__next {
-    background-image: url(/img/next-button_active.svg);
+    
     display: block;
     width: 40px;
     height: 40px;
