@@ -58,10 +58,12 @@ let span4 = document.getElementsByClassName('modal-close')[3];
         let offset = 0;
 const sliderLine = document.querySelector('.slider-line');
 const nextButton = document.querySelector('.slider__next');
-const prevButton = document.querySelector('.slider__prev')
+const prevButton = document.querySelector('.slider__prev');
+const commentBox = document.querySelector('.comments-box');
 
 nextButton.addEventListener('click', function() {
-    offset = offset + 1040;
+    // offset = offset + 1040;
+    offset = offset + commentBox.offsetWidth + 34;
     if (offset > 3120) {
     offset = 0; 
     
@@ -71,11 +73,29 @@ nextButton.addEventListener('click', function() {
     });
 
 prevButton.addEventListener('click', function() {
-        offset = offset - 1040;
+        // offset = offset - 1040;
+        offset = offset - commentBox.offsetWidth - 34;
         if (offset < 0) {
         offset = 3120; }
     
         sliderLine.style.left = -offset + 'px';
         });
+
+
+       
+            const burgerButton = document.querySelector('.burger');
+            console.log(burgerButton);
+            const headerMenuList = document.querySelector('.menu-list');
+            console.log(headerMenuList);
+            const burgerMenu = document.querySelector('.burger-menu');
+            burgerButton.addEventListener('click', function() {
+                burgerButton.classList.toggle('active-burger');
+                headerMenuList.classList.toggle('menu-list-mobile');
+                burgerMenu.classList.toggle('active-burger-menu');
+
+            })
+
+
+        
         
         
